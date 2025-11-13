@@ -1,0 +1,23 @@
+[versions]
+lombok = "1.18.42"
+jetbrainsAnnotations = "26.0.2"
+shadow = "9.2.2"
+minestom = "2025.10.11-1.21.10"
+logback = "1.5.18"
+jansi = "2.4.2"
+luckperms = "5.4-SNAPSHOT"
+configurate = "4.2.0"
+
+[libraries]
+# Common
+jetbrains-annotations = { module = "org.jetbrains:annotations", version.ref = "jetbrainsAnnotations" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+minestom = { module = "net.minestom:minestom", version.ref = "minestom" }
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+jansi = { module = "org.fusesource.jansi:jansi", version.ref = "jansi" }
+luckperms = { module = "dev.lu15:luckperms-minestom", version.ref = "luckperms" }
+sponge-configurate-core = { module = "org.spongepowered:configurate-core", version.ref = "configurate" }
+sponge-configurate-hocon = { module = "org.spongepowered:configurate-hocon", version.ref = "configurate" }
+
+[plugins]
+shadow = { id = "com.gradleup.shadow", version.ref = "shadow" }
