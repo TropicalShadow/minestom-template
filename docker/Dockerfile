@@ -6,7 +6,7 @@ ARG GITHUB_BASEURL=https://github.com
 ENV SERVER_HOST=localhost
 ENV SERVER_PORT=25565
 
-ARG MC_MONITOR_VERSION=0.15.7
+ARG MC_MONITOR_VERSION=0.16.0
 ARG MC_MONITOR_BASE_URL=${GITHUB_BASEURL}/itzg/mc-monitor/releases/latest/download
 
 # Install curl and tar
