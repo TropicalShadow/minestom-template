@@ -11,7 +11,6 @@ repositories {
     mavenCentral()
 
     // luckperms
-    maven("https://repo.lucko.me/")
     maven("https://repo.hypera.dev/snapshots/")
 }
 
@@ -24,9 +23,13 @@ dependencies {
     implementation(libs.lombok)
     annotationProcessor(libs.lombok)
 
+    /* Luckperms */
     implementation(libs.luckperms)
     implementation(libs.sponge.configurate.core)
     implementation(libs.sponge.configurate.hocon)
+    implementation(libs.hikari)
+    implementation(libs.h2database) // Replace with database provider of your choice
+    /* End of Luckperms */
 }
 
 java {
