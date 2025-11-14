@@ -156,6 +156,8 @@ gradle-app.setting
 *.hprof
 
 # Run Env
-run/
+run/logs
+run/luckperms
+!run/luckperms/luckperms.conf
 
 # End of https://www.toptal.com/developers/gitignore/api/intellij+all,java,kotlin,gradle
