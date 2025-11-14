@@ -35,11 +35,16 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew shadowJar
 
+      - name: Generic jar file naming
+        run: mv build/libs/*.jar build/libs/server.jar
+
       - name: Upload Server Artifact
         uses: actions/upload-artifact@v5
         with:
           name: standalone-binary
-          path: build/libs/minestom-template-*.jar
+          path: build/libs/server.jar
+          if-no-files-found: error
+
 
   build-docker:
     needs: build-gradle
@@ -59,9 +64,6 @@ jobs:
         with:
           name: standalone-binary
           path: docker/
-
-      - name: Remove version number from jar artifact name
-        run: mv docker/minestom-template-*.jar docker/minestom-template.jar
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
