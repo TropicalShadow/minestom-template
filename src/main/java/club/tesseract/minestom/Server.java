@@ -25,11 +25,10 @@ public final class Server implements ModuleHolder {
     );
 
     public void onStart() {
-        MinestomPlayer.register();
 
         register(new PermissionModule(this));
 
-
+        MinestomPlayer.register();
         minecraftServer.start("0.0.0.0", 25565);
     }
 
