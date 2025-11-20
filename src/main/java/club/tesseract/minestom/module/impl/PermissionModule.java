@@ -2,7 +2,7 @@ package club.tesseract.minestom.module.impl;
 
 import club.tesseract.minestom.module.Module;
 import club.tesseract.minestom.module.ModuleHolder;
-import club.tesseract.minestom.permission.LuckpermsPermission;
+import club.tesseract.minestom.utils.permission.LuckpermsPermission;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

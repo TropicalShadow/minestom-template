@@ -5,7 +5,7 @@ import club.tesseract.minestom.environment.SharedConstants;
 import club.tesseract.minestom.module.Module;
 import club.tesseract.minestom.module.ModuleHolder;
 import club.tesseract.minestom.module.impl.PermissionModule;
-import club.tesseract.minestom.player.MinestomPlayer;
+import club.tesseract.minestom.utils.entity.player.MinestomPlayer;
 import lombok.extern.slf4j.Slf4j;
 import net.minestom.server.Auth;
 import net.minestom.server.MinecraftServer;

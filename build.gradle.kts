@@ -12,10 +12,12 @@ repositories {
 
     // luckperms
     maven("https://repo.hypera.dev/snapshots/")
+    maven("https://repo.tesseract.club/releases/")
 }
 
 dependencies {
     implementation(libs.minestom)
+    implementation(libs.minestom.utils)
 
     implementation(libs.logback.classic)
     implementation(libs.jansi)
