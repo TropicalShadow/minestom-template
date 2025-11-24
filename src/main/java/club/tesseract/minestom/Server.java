@@ -33,6 +33,7 @@ public final class Server implements ModuleHolder {
     }
 
     public void onStop() {
+        modules.forEach(Module::close);
         modules.stream().map(Module::getClass).forEach(this::unregister);
         MinecraftServer.stopCleanly();
     }
