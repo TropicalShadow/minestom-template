@@ -8,7 +8,7 @@ luckperms = "5.5-SNAPSHOT"
 configurate = "4.2.0"
 hikari = "6.3.0"
 h2database = "2.4.240"
-minestom-utils = "0.0.1"
+minestom-utils = "0.0.4"
 
 [libraries]
 # Common
