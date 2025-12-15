@@ -39,7 +39,7 @@ jobs:
         run: mv build/libs/*.jar build/libs/server.jar
 
       - name: Upload Server Artifact
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: standalone-binary
           path: build/libs/server.jar
