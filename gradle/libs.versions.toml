@@ -8,7 +8,7 @@ luckperms = "5.5-SNAPSHOT"
 configurate = "4.2.0"
 hikari = "7.0.2"
 h2database = "2.4.240"
-minestom-utils = "0.0.5"
+minestom-utils = "0.0.6"
 spark = "1.10-SNAPSHOT"
 bytesocks-java-client = "1.0-SNAPSHOT"
 
