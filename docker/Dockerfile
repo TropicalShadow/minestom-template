@@ -6,8 +6,8 @@ ARG GITHUB_BASEURL=https://github.com
 ENV SERVER_HOST=localhost
 ENV SERVER_PORT=25565
 
-ARG MC_MONITOR_VERSION=0.16.0
-ARG MC_MONITOR_BASE_URL=${GITHUB_BASEURL}/itzg/mc-monitor/releases/latest/download
+ARG MC_MONITOR_VERSION=0.16.1
+ARG MC_MONITOR_BASE_URL=${GITHUB_BASEURL}/itzg/mc-monitor/releases/download/${MC_MONITOR_VERSION}
 
 # Install curl and tar
 RUN apt-get update && apt-get install -y curl tar && rm -rf /var/lib/apt/lists/*
