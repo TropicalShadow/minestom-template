@@ -1,7 +1,7 @@
 [versions]
 lombok = "1.18.44"
 shadow = "9.4.1"
-minestom = "2026.03.25-1.21.11"
+minestom = "2026.04.13-1.21.11"
 logback = "1.5.32"
 jansi = "2.4.3"
 luckperms = "5.5-SNAPSHOT"
