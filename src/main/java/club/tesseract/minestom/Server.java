@@ -4,9 +4,9 @@ import club.tesseract.minestom.environment.Environment;
 import club.tesseract.minestom.environment.SharedConstants;
 import club.tesseract.minestom.module.Module;
 import club.tesseract.minestom.module.ModuleHolder;
-import club.tesseract.minestom.module.impl.PermissionModule;
 import club.tesseract.minestom.module.impl.SparkModule;
 import club.tesseract.minestom.utils.entity.player.MinestomPlayer;
+import club.tesseract.minestom.utils.permission.DefaultPermissionHolder;
 import lombok.extern.slf4j.Slf4j;
 import net.minestom.server.Auth;
 import net.minestom.server.MinecraftServer;
@@ -27,10 +27,9 @@ public final class Server implements ModuleHolder {
 
     public void onStart() {
 
-        register(new PermissionModule(this));
         register(new SparkModule(this));
 
-        MinestomPlayer.register();
+        MinestomPlayer.register(DefaultPermissionHolder::new);
         minecraftServer.start("0.0.0.0", 25565);
     }
 
