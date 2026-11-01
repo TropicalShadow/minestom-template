@@ -11,7 +11,6 @@ repositories {
     mavenCentral()
 
     // luckperms
-    maven("https://repo.hypera.dev/snapshots/")
     maven("https://repo.tesseract.club/releases/")
     maven("https://repo.lucko.me/") // spark-common
     maven("https://oss.sonatype.org/content/repositories/snapshots/") // spark-common's dependencies
